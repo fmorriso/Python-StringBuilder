@@ -2,7 +2,7 @@ from io import StringIO
 
 
 class StringBuilder(StringIO):
-    """ Implements a better StringIO API without all the flaws of StringIO """
+    """ Implements a better StringIO API without the annoying constructor flaw of StringIO """
 
 
     def __init__(self, initial_value = ''):
