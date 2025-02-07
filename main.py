@@ -7,14 +7,15 @@ def get_python_version() -> str:
 
 
 def main():
-    sbr = StringBuilder('Start ')
-    sbr.append('A ')
-    sbr.append('B ')
-    sbr.append('C')
+    sbr = StringBuilder('A B C ')
+    sbr.append('X ')
+    sbr.append('Y ')
+    sbr.append('Z ')
     print(sbr)
 
-    # try inserting half way into the buffer
-    sbr.insert(sbr.tell() // 2, 'inserted')
+    # try inserting a new string at a specific point in the existing string
+    index = sbr.index_of('X ')
+    sbr.insert(index, 'J K L ')
     print(sbr)
 
 
