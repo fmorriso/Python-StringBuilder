@@ -24,22 +24,23 @@ def main():
     index = sbr.index_of(remove)
     if index >= 0:
         sbr.remove(index, length)
-        print(f'after remove of "{remove}" starting at {index} for a length of {length}: sbr = "{sbr.to_string()}"')
+        print(f'after remove of "{remove}" starting at {index} for a length of {length}: sbr = "{sbr}"')
     else:
         print(f'"{remove}" was not found in the string builder instance')
 
     # practice replace method with single character replacement
-    sbr = StringBuilder('abcdabcdabcd')
+    sbr = StringBuilder('abcd' * 3)
+    print(f'sbr = "{sbr}"')
     find = 'b'
     replace = 'B'
     sbr.replace(find,replace)
-    print(f'After replacing "{find}" with "{replace}", sbr = "{sbr.to_string()}"')
+    print(f'After replacing "{find}" with "{replace}", sbr = "{sbr}"')
 
     # practice replace method with multi-character replacement
     find = 'cd'
     replace = 'CD'
     sbr.replace(find, replace)
-    print(f'After replacing "{find}" with "{replace}", sbr = "{sbr.to_string()}"')
+    print(f'After replacing "{find}" with "{replace}", sbr = "{sbr}"')
 
     print(f'{sbr=}')
 
