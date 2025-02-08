@@ -41,6 +41,7 @@ def main():
     sbr.replace(find, replace)
     print(f'After replacing "{find}" with "{replace}", sbr = "{sbr.to_string()}"')
 
+    print(f'{sbr=}')
 
 if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')

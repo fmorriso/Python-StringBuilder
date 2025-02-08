@@ -60,6 +60,8 @@ class StringBuilder:
     def to_string(self) -> str:
         return ''.join(self._chars)
 
+    def __repr__(self) -> str:
+        return self.to_string()
+
     def __str__(self) -> str:
-        # print(f'{self._chars = }')
-        return ''.join(self._chars)
+        return self.to_string()
