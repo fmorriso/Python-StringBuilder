@@ -20,7 +20,7 @@ A project to emulate C#/Java StringBuilder using python's built-in list[str] cla
 ## API Notes
 
 ### StringBuilder(value: str) or StringBuilder()
-Accepts and optional initial `value`; otherwise, initializes to empty.
+Accepts an optional initial `value`; otherwise, initializes to empty.
 
 ### append(value: str)
 Appends the specified string `value` to the string buffer.
