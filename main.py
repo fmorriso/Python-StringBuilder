@@ -8,15 +8,16 @@ def get_python_version() -> str:
 
 def main():
     sbr = StringBuilder('A B C ')
+    print(f'Initial sbr="{sbr}"')
     sbr.append('X ')
     sbr.append('Y ')
     sbr.append('Z ')
-    print(sbr)
+    print(f'After appends, sbr="{sbr}"')
 
     # try inserting a new string at a specific point in the existing string
     index = sbr.index_of('X ')
     sbr.insert(index, 'J K L ')
-    print(f'after adding J K L: {sbr.to_string() = }')
+    print(f'after adding J K L at {index}: sbr = "{sbr}"')
 
     # try removing 'X Y Z'
     remove = 'X Y Z '
