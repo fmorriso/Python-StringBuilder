@@ -22,8 +22,11 @@ def main():
     remove = 'X Y Z '
     length = len(remove)
     index = sbr.index_of(remove)
-    sbr.remove(index, length)
-    print(f'after remove of "{remove}" starting at {index} for a length of {length}: sbr = "{sbr.to_string()}"')
+    if index >= 0:
+        sbr.remove(index, length)
+        print(f'after remove of "{remove}" starting at {index} for a length of {length}: sbr = "{sbr.to_string()}"')
+    else:
+        print(f'"{remove}" was not found in the string builder instance')
 
 if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')
