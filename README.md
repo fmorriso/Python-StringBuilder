@@ -33,6 +33,9 @@ the length of the `value`.
 ### index_of(value:str)
 Returns either the index of the start of `value` or -1 if `value` does not exist in the buffer.
 
+### replace(old_value:str, new_value:str)
+Replaces all occurrences of `old_value` with `new_value`.
+
 ### size()
 Returns the current size of the buffer as an integer.
 
