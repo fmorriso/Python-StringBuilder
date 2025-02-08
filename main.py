@@ -28,6 +28,20 @@ def main():
     else:
         print(f'"{remove}" was not found in the string builder instance')
 
+    # practice replace method with single character replacement
+    sbr = StringBuilder('abcdabcdabcd')
+    find = 'b'
+    replace = 'B'
+    sbr.replace(find,replace)
+    print(f'After replacing "{find}" with "{replace}", sbr = "{sbr.to_string()}"')
+
+    # practice replace method with multi-character replacement
+    find = 'cd'
+    replace = 'CD'
+    sbr.replace(find, replace)
+    print(f'After replacing "{find}" with "{replace}", sbr = "{sbr.to_string()}"')
+
+
 if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')
     main()

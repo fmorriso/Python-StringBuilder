@@ -46,7 +46,16 @@ class StringBuilder:
 
     def replace(self, old_value: str, new_value: str) -> None:
         """ Replace all occurrences of the specified string with the specified value."""
-        pass
+        if len(old_value) == 0:
+            return
+        # single character replacement can be done quickly
+        if len(new_value) == 1:
+            self._chars = [new_value if item == old_value else item for item in self._chars]
+        else:
+            # multiple character replacement needs special treatment as a string
+            full_string = ''.join(self._chars)
+            new_string = full_string.replace(old_value, new_value)
+            self._chars = list(new_string)
 
     def to_string(self) -> str:
         return ''.join(self._chars)
