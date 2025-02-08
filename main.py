@@ -16,8 +16,9 @@ def main():
 
     # try inserting a new string at a specific point in the existing string
     index = sbr.index_of('X ')
-    sbr.insert(index, 'J K L ')
-    print(f'after adding J K L at {index}: sbr = "{sbr}"')
+    value_to_insert = 'J K L '
+    sbr.insert(index, value_to_insert)
+    print(f'after adding "{value_to_insert}" at {index = }: sbr = "{sbr}"')
 
     # try removing 'X Y Z'
     remove = 'X Y Z '
@@ -25,7 +26,7 @@ def main():
     index = sbr.index_of(remove)
     if index >= 0:
         sbr.remove(index, length)
-        print(f'after remove of "{remove}" starting at {index} for a length of {length}: sbr = "{sbr}"')
+        print(f'after removing "{remove}" starting at {index} for a length of {length}: sbr = "{sbr}"')
     else:
         print(f'"{remove}" was not found in the string builder instance')
 
@@ -43,7 +44,7 @@ def main():
     sbr.replace(find, replace)
     print(f'After replacing "{find}" with "{replace}", sbr = "{sbr}"')
 
-    print(f'{sbr=}')
+    print(f'{sbr = }')
 
 if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')
