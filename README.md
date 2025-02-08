@@ -19,11 +19,11 @@ A project to emulate C#/Java StringBuilder using python's built-in list[str] cla
 
 ## API Notes
 
-### Constructor
-Accepts and optional initial value; otherwise, initializes to empty.
+### StringBuilder(value: str) or StringBuilder()
+Accepts and optional initial `value`; otherwise, initializes to empty.
 
 ### append(value: str)
-Appends the specified string to the string buffer.
+Appends the specified string `value` to the string buffer.
 
 ### insert(index: int, value: str)
 Inserts the specified string `value` at the specified `index`,
