@@ -46,3 +46,5 @@ Returns the current size of the buffer as an integer.
 Returns the StringBuffer contents as a python string (str).
 
 ## References
+* [Using the StringBuilder class in .Net](https://learn.microsoft.com/en-us/dotnet/standard/base-types/stringbuilder)
+* [StringBuilder class API](https://learn.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=net-9.0)
