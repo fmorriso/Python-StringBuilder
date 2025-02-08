@@ -38,6 +38,17 @@ class StringBuilder:
         return len(self._chars)
 
 
+    def remove(self, start_index: int, length: int) -> None:
+        """ Remove the specified portion of the string starting at start_index for
+        the number of characters specified by length."""
+        pass
+
+
+    def replace(self, old_value: str, new_value: str) -> None:
+        """ Replace all occurrences of the specified string with the specified value."""
+        pass
+
+
     def __str__(self) -> str:
         # print(f'{self._chars = }')
         return ''.join(self._chars)
