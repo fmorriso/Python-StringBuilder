@@ -22,11 +22,45 @@ A project to emulate C#/Java StringBuilder using python's built-in list[str] cla
 ### constructor: StringBuilder(value: str) or StringBuilder()
 Accepts an optional initial `value`; otherwise, initializes to empty.
 
+Example 1:
+
+<code>
+    sbr = StringBuilder()
+</code>
+
+Example 2:
+
+<code>
+    sbr = StringBuilder('ABCD')
+</code>
+    
+
 ### append(value: str)
 Appends the specified string `value` to the string buffer.
 
+Example:
+
+<code>
+    sbr = StringBuilder('ABCD')
+</code>
+<div></div>
+<code>    
+    sbr.append("EFGH")
+</code>
+
 ### index_of(value:str)
 Returns either the index of the start of `value` or -1 if `value` does not exist in the buffer.
+
+
+Example:
+
+<code>
+    sbr = StringBuilder('ABCD')
+</code>
+<div></div>
+<code> 
+    idx = sbr.index_of("C") # returns 2    
+</code>
 
 ### insert(index: int, value: str)
 Inserts the specified string `value` at the specified `index`,
@@ -35,6 +69,7 @@ the length of the `value`.
 
 ### remove(index: int, length: int)
 Removes `length` characters from the buffer starting at `index`. 
+
 
 ### replace(old_value:str, new_value:str)
 Replaces all occurrences of `old_value` with `new_value`.
