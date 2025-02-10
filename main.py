@@ -18,7 +18,7 @@ def main():
     index = sbr.index_of('X ')
     value_to_insert = 'J K L '
     sbr.insert(index, value_to_insert)
-    print(f'after adding "{value_to_insert}" at {index = }: sbr = "{sbr}"')
+    print(f'after inserting "{value_to_insert}" at {index = }: sbr = "{sbr}"')
 
     # try removing 'X Y Z'
     remove = 'X Y Z '

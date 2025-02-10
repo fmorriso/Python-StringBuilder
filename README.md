@@ -16,6 +16,7 @@ A project to emulate C#/Java StringBuilder using python's built-in list[str] cla
 |:-----------|:-----------------------------------------------------------|
 | 2025-02-06 | Initial creation                                           |
 | 2025-02-07 | Simplify implementation using `list[str]` to hold contents |
+| 2025-02-10 | Add more API documentation to README                       |
 
 ## API Notes
 
@@ -66,6 +67,28 @@ Example:
 Inserts the specified string `value` at the specified `index`,
 pushing the remainder of the entry to the right by
 the length of the `value`.
+
+Example:
+<div></div>
+<code>
+    sbr = StringBuilder("A B C X Y Z ")
+</code>
+<div></div>
+<code>
+    index = sbr.index_of('X ')
+</code>
+<div></div>
+<code>
+    value_to_insert = 'J K L '
+</code>
+<div></div>
+<code>
+    sbr.insert(index, value_to_insert)
+</code>
+<div></div>
+<code>
+after adding "J K L " at index = 6: sbr = "A B C J K L X Y Z "
+</code>
 
 ### remove(index: int, length: int)
 Removes `length` characters from the buffer starting at `index`. 
