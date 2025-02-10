@@ -72,8 +72,6 @@ Example:
 <div></div>
 <code>
     sbr = StringBuilder("A B C X Y Z ")
-</code>
-<code>
     index = sbr.index_of('X ')
 </code>
 <div></div>
