@@ -44,10 +44,10 @@ Example:
     sbr = StringBuilder('ABCD')
     sbr.append("EFGH")
 </code>
+sbr now contains "ABDEEFGH"
 
 ### index_of(value:str)
 Returns either the index of the start of `value` or -1 if `value` does not exist in the buffer.
-
 
 Example:
 
@@ -55,6 +55,7 @@ Example:
     sbr = StringBuilder('ABCD')
     idx = sbr.index_of("C") # returns 2    
 </code>
+idx will contain a value of .
 
 ### insert(index: int, value: str)
 Inserts the specified string `value` at the specified `index`,
