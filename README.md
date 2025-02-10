@@ -7,7 +7,7 @@ A project to emulate C#/Java StringBuilder using python's built-in list[str] cla
 | Tool    |  Version |
 |:--------|---------:|
 | Python  |   3.13.2 |
-| VSCode  |   1.96.4 |
+| VSCode  |   1.97.0 |
 | PyCharm | 2024.3.2 |
 
 ## Change History
