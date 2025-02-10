@@ -50,12 +50,11 @@ sbr now contains "ABDEEFGH"
 Returns either the index of the start of `value` or -1 if `value` does not exist in the buffer.
 
 Example:
-
 <code>
     sbr = StringBuilder('ABCD')
     idx = sbr.index_of("C") # returns 2    
 </code>
-idx will contain a value of .
+idx will contain a value of 2.
 
 ### insert(index: int, value: str)
 Inserts the specified string `value` at the specified `index`,
@@ -71,7 +70,6 @@ Example:
 </code>
 
 after adding "J K L " at index = 6: sbr = "A B C J K L X Y Z "
-
 
 ### remove(index: int, length: int)
 Removes `length` characters from the buffer starting at `index`. 
