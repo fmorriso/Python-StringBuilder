@@ -57,9 +57,6 @@ Example:
 
 <code>
     sbr = StringBuilder('ABCD')
-</code>
-<div></div>
-<code> 
     idx = sbr.index_of("C") # returns 2    
 </code>
 
@@ -69,16 +66,15 @@ pushing the remainder of the entry to the right by
 the length of the `value`.
 
 Example:
-<div></div>
 <code>
     sbr = StringBuilder("A B C X Y Z ")
     index = sbr.index_of('X ')
     value_to_insert = 'J K L '
     sbr.insert(index, value_to_insert)
 </code>
-<code>
+
 after adding "J K L " at index = 6: sbr = "A B C J K L X Y Z "
-</code>
+
 
 ### remove(index: int, length: int)
 Removes `length` characters from the buffer starting at `index`. 
