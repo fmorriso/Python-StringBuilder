@@ -100,6 +100,13 @@ After replacing "b" with "B", sbr = "aBcdaBcdaBcd"
 ### size()
 Returns the current size of the buffer as an integer.
 
+Example:
+<code>
+    sbr = StringBuilder('abcd' * 3)
+    lth = sbr.size()
+</code>
+lth will contain the integer value 12.
+
 ### to_string()
 Returns the StringBuffer contents as a python string (str).
 
