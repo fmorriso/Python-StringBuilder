@@ -49,6 +49,9 @@ def main():
     lth = sbr.size()
     print(f'{lth = }')
 
+    print(sbr) # calls __str__
+    print(f'{sbr=}') # calls __repr__
+
 if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')
     main()
