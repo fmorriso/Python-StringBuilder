@@ -44,7 +44,7 @@ Example:
     sbr = StringBuilder('ABCD')
     sbr.append("EFGH")
 </code>
-sbr now contains "ABDEEFGH"
+sbr now contains "ABCDEFGH"
 
 ### index_of(value:str)
 Returns either the index of the start of `value` or -1 if `value` does not exist in the buffer.
