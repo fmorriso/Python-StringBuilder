@@ -73,7 +73,6 @@ Example:
 <code>
     sbr = StringBuilder("A B C X Y Z ")
 </code>
-<br>
 <code>
     index = sbr.index_of('X ')
 </code>
