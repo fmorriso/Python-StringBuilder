@@ -73,16 +73,9 @@ Example:
 <code>
     sbr = StringBuilder("A B C X Y Z ")
     index = sbr.index_of('X ')
-</code>
-<div></div>
-<code>
     value_to_insert = 'J K L '
-</code>
-<div></div>
-<code>
     sbr.insert(index, value_to_insert)
 </code>
-<div></div>
 <code>
 after adding "J K L " at index = 6: sbr = "A B C J K L X Y Z "
 </code>
