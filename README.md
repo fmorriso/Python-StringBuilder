@@ -74,6 +74,15 @@ after adding "J K L " at index = 6: sbr = "A B C J K L X Y Z "
 ### remove(index: int, length: int)
 Removes `length` characters from the buffer starting at `index`. 
 
+Example:
+<code>
+    sbr = StringBuilder("A B C J K L X Y Z ")
+    remove = 'X Y Z '
+    length = len(remove)
+    index = sbr.index_of(remove)
+    sbr.remove(index, length)
+</code>
+after removing "X Y Z " starting at 12 for a length of 6: sbr = "A B C J K L "
 
 ### replace(old_value:str, new_value:str)
 Replaces all occurrences of `old_value` with `new_value`.
