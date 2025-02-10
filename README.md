@@ -40,12 +40,8 @@ Example 2:
 Appends the specified string `value` to the string buffer.
 
 Example:
-
 <code>
     sbr = StringBuilder('ABCD')
-</code>
-<div></div>
-<code>    
     sbr.append("EFGH")
 </code>
 
