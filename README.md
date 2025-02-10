@@ -87,6 +87,16 @@ after removing "X Y Z " starting at 12 for a length of 6: sbr = "A B C J K L "
 ### replace(old_value:str, new_value:str)
 Replaces all occurrences of `old_value` with `new_value`.
 
+Example:
+<code>
+    sbr = StringBuilder('abcd' * 3)
+    find = 'b'
+    replace = 'B'
+    sbr.replace(find,replace)
+</code>
+After replacing "b" with "B", sbr = "aBcdaBcdaBcd"
+
+
 ### size()
 Returns the current size of the buffer as an integer.
 
