@@ -52,6 +52,28 @@ def main():
     print(sbr) # calls __str__
     print(f'{sbr}') # calls __repr__
 
+    # test last_index_of
+    sbr = StringBuilder('ABCDE' * 4)
+    search_for = 'E'
+    idx = sbr.last_index_of(search_for)
+    print(f'The last occurrence of "{search_for}" within "{sbr.to_string()}" is at position {idx}')
+    search_for = 'CD'
+    idx = sbr.last_index_of(search_for)
+    print(f'The last occurrence of "{search_for}" within "{sbr.to_string()}" is at position {idx}')
+
+    # test delete
+    sbr = StringBuilder('ABCDE' * 4)
+    start_index = 0
+    end_index = 3
+    sbr.delete(start_index, end_index)
+    print(f'After delete({start_index}, {end_index}), the buffer contains "{sbr.to_string()}"')
+
+    # test reverse
+    sbr = StringBuilder('ABCDE')
+    print(f'Before revers(), sbr = "{sbr}"')
+    sbr.reverse()
+    print(f'After reverse(), sbr = "{sbr}"')
+
 if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')
     main()

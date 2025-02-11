@@ -17,6 +17,7 @@ A project to emulate C#/Java StringBuilder using python's built-in list[str] cla
 | 2025-02-06 | Initial creation                                           |
 | 2025-02-07 | Simplify implementation using `list[str]` to hold contents |
 | 2025-02-10 | Add more API documentation to README                       |
+| 2025-02-11 | Add new methods to StringBuilder class                     |
 
 ## API Notes
 
@@ -46,6 +47,23 @@ Example:
 </code>
 sbr now contains "ABCDEFGH"
 
+### capacity()
+See ```size()```
+
+
+### delete(start_index: int, end_index: int)
+Deletes characters from the string buffer beginning at ```start_index``` through and including ```end_index```
+
+Example:
+
+<code>
+    sbr = StringBuilder('ABCDE' * 4)
+    start_index = 0
+    end_index = 3
+    sbr.delete(start_index, end_index)
+</code>
+After delete(0, 3), the buffer contains "EABCDEABCDEABCDE"
+
 ### index_of(value:str)
 Returns either the index of the start of `value` or -1 if `value` does not exist in the buffer.
 
@@ -70,6 +88,17 @@ Example:
 </code>
 
 after adding "J K L " at index = 6: sbr = "A B C J K L X Y Z "
+
+
+### last_index_of(search_for:str)
+Returns the index of the last occurrence of the specified string search value or -1 if not found.
+
+<code>
+    sbr = StringBuilder('ABCDE' * 4)
+    search_for = 'CD'
+    idx = sbr.last_index_of(search_for)
+</code>
+The last occurrence of "CD" within "ABCDEABCDEABCDEABCDE" is at position 17
 
 ### remove(index: int, length: int)
 Removes `length` characters from the buffer starting at `index`. 
@@ -96,6 +125,18 @@ Example:
 </code>
 After replacing "b" with "B", sbr = "aBcdaBcdaBcd"
 
+### reverse()
+Reverses the string inside the underlying buffer
+
+Example:
+<code>
+    sbr = StringBuilder('ABCDE')
+    print(f'Before revers(), sbr = "{sbr}"')
+    sbr.reverse()
+    print(f'After reverse(), sbr = "{sbr}"')
+</code>
+Before revers(), sbr = "ABCDE"
+After reverse(), sbr = "EDCBA"
 
 ### size()
 Returns the current size of the buffer as an integer.
