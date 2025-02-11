@@ -162,4 +162,4 @@ x will contain "abcdabcdabcd"
 ## References
 * [Using the StringBuilder class in .Net](https://learn.microsoft.com/en-us/dotnet/standard/base-types/stringbuilder)
 * [C# StringBuilder class API](https://learn.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=net-9.0)
-* [Java StringBuilder class API](https://docs.oracle.com/javase/23/docs/api/java/lang/StringBuilder.html)
+* [Java StringBuilder class API](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/StringBuilder.html)
