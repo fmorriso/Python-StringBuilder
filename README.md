@@ -136,6 +136,7 @@ Example:
     print(f'After reverse(), sbr = "{sbr}"')
 </code>
 Before reverse(), sbr = "ABCDE"
+<br/>
 After reverse(), sbr = "EDCBA"
 
 ### size()
