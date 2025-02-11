@@ -127,7 +127,7 @@ After replacing "b" with "B", sbr = "aBcdaBcdaBcd"
 
 ### replace_at(start_index: int, end_index: int, replacement_value: str)
 Mimics the Java ```replace(int start, int end, String value)``` API by replacing 
-the portion of the underlying value from ```start_index``` (inclusive) to ```end_index``` (exlusive)
+the portion of the underlying value from ```start_index``` (inclusive) to ```end_index``` <em>(exclusive)</em>
 with ```replacement_value```.
 
 Example:
