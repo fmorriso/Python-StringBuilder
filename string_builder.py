@@ -73,10 +73,18 @@ class StringBuilder:
             self._chars = list(new_string)
 
 
+    def replace_at(self, start_index: int, end_index: int, replacement_value: str) -> None:
+        """
+        A close approximation of the Java ```replace(int start, int end, String str)``` API.
+        Replaces the characters in a substring of this sequence with characters in the specified ```replacement_value``` String.
+        NOTE: Since this is essentially mimicking its Java counterpart, ```end_index``` is non-inclusive
+        """
+        self._chars[start_index:end_index] = list(replacement_value)
+
+
     def reverse(self):
         """Reverse the string inside the underlying buffer"""
         self._chars.reverse()
-
 
 
     def size(self) -> int:

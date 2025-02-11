@@ -125,6 +125,24 @@ Example:
 </code>
 After replacing "b" with "B", sbr = "aBcdaBcdaBcd"
 
+### replace_at(start_index: int, end_index: int, replacement_value: str)
+Mimics the Java ```replace(int start, int end, String value)``` API by replacing 
+the portion of the underlying value from ````start_index``` (inclusive) to ```end_index``` (exlusive)
+with ```replacement_value```.
+
+Example:
+<code>
+    sbr = StringBuilder('ABCDEFG')
+    print(f'Original sbr = "{sbr}"')
+    replacement = "WXYZ"
+    start_index = sbr.index_of("C")
+    end_index = start_index + 1
+    sbr.replace_at(start_index, end_index, replacement)
+</code>
+Original sbr = "ABCDEFG"
+<br/>
+After replace_at(2, 3, "WXYZ"), sbr = "ABWXYZDEFG"
+
 ### reverse()
 Reverses the string inside the underlying buffer
 

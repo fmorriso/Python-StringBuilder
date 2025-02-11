@@ -35,7 +35,7 @@ def main():
     print(f'sbr = "{sbr}"')
     find = 'b'
     replace = 'B'
-    sbr.replace(find,replace)
+    sbr.replace(find, replace)
     print(f'After replacing "{find}" with "{replace}", sbr = "{sbr}"')
 
     # practice replace method with multi-character replacement
@@ -49,8 +49,8 @@ def main():
     lth = sbr.size()
     print(f'{lth = }')
 
-    print(sbr) # calls __str__
-    print(f'{sbr}') # calls __repr__
+    print(sbr)  # calls __str__
+    print(f'{sbr}')  # calls __repr__
 
     # test last_index_of
     sbr = StringBuilder('ABCDE' * 4)
@@ -73,6 +73,16 @@ def main():
     print(f'Before reverse(), sbr = "{sbr}"')
     sbr.reverse()
     print(f'After reverse(), sbr = "{sbr}"')
+
+    # test replace(start, end, value)
+    sbr = StringBuilder('ABCDEFG')
+    print(f'Original sbr = "{sbr}"')
+    replacement = "WXYZ"
+    start_index = sbr.index_of("C")
+    end_index = start_index + 1
+    sbr.replace_at(start_index, end_index, replacement)
+    print(f'After replace_at({start_index}, {end_index}, "{replacement}"), sbr = "{sbr}"')
+
 
 if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')
