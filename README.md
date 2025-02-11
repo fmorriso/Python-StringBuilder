@@ -135,7 +135,7 @@ Example:
     sbr.reverse()
     print(f'After reverse(), sbr = "{sbr}"')
 </code>
-Before revers(), sbr = "ABCDE"
+Before reverse(), sbr = "ABCDE"
 After reverse(), sbr = "EDCBA"
 
 ### size()

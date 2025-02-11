@@ -70,7 +70,7 @@ def main():
 
     # test reverse
     sbr = StringBuilder('ABCDE')
-    print(f'Before revers(), sbr = "{sbr}"')
+    print(f'Before reverse(), sbr = "{sbr}"')
     sbr.reverse()
     print(f'After reverse(), sbr = "{sbr}"')
 
