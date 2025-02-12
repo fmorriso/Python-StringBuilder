@@ -1,6 +1,6 @@
 # Python StringBuilder
 
-A project to emulate some, but not all, of the C#/Java StringBuilder using python's built-in list[str] class.
+A project to emulate some, but not all, of the C#/Java StringBuilder classes using python's built-in list[str] class.
 
 ## Tools Used
 
