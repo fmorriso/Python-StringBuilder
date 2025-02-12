@@ -18,6 +18,7 @@ A project to emulate C#/Java StringBuilder using python's built-in list[str] cla
 | 2025-02-07 | Simplify implementation using `list[str]` to hold contents |
 | 2025-02-10 | Add more API documentation to README                       |
 | 2025-02-11 | Add new methods to StringBuilder class                     |
+| 2025-02-12 | Streamlined the append method                              |
 
 ## API Notes
 

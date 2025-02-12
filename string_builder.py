@@ -9,7 +9,7 @@ class StringBuilder:
 
     def append(self, new_value: str) -> None:
         """ Append the specified string to the end of the existing string."""
-        self._chars.extend(list(new_value))
+        self._chars.extend(new_value)
 
 
     def capacity(self) -> int:
