@@ -8,7 +8,7 @@ A project to emulate some, but not all, of the C#/Java StringBuilder classes usi
 |:--------|---------:|
 | Python  |   3.13.2 |
 | VSCode  |   1.97.1 |
-| PyCharm | 2024.3.2 |
+| PyCharm | 2024.3.3 |
 
 ## Change History
 
